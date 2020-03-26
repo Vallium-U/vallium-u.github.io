@@ -465,7 +465,7 @@ padding: 0 120px;
 
     position: absolute;
     left: 0;
-    top: 0;
+    top: -10px;
     z-index: 1;
 }
 .view__text{
