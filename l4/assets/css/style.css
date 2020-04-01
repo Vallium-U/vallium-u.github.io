@@ -27,64 +27,6 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 
-
-/* Intro */
-.intro {
-    /* display: flex;
-    flex-direction: column;
-    justify-content: center; */
-    width: 1200px;
-    height: 800px;
-    
-
-    background: url("../images/1.jpg") center no-repeat;
-    background-color: #fff;
-    /* -webkit-background-size: cover; */
-    background-size: 100%;
-}
-
-.intro__inner {
-    width: 100%;
-    max-width: 880px;
-    margin: 0 auto -100px;
-
-    text-align: center;
-}
-
-.intro__suptitle {
-    margin-bottom: 0px;
-
-    font-family: 'Kaushan Script', cursive;
-    font-size: 85px;
-    font-weight: 100;
-    color: #fff;
-}
-.intro__suptitle__f {
-    margin-bottom: -140px;
-
-    font-family: 'Kaushan Script', cursive;
-    font-size: 85px;
-    font-weight: 700;
-    color: rgb(55, 55, 55);
-}
-.intro__suptitle__info {
-    margin-bottom: 70px;
-
-    font-family: 'Kaushan Script', cursive;
-    font-size: 45px;
-    font-weight: 100;
-    color: #fff;
-}
-.intro__suptitle__info__f {
-    margin-bottom: -76px;
-
-    font-family: 'Kaushan Script', cursive;
-    font-size: 45px;
-    font-weight: 700;
-    color: rgb(55, 55, 55);
-}
-
-
 /* Header */
 .header {
     width: 100%;
@@ -114,7 +56,7 @@ h1, h2, h3, h4, h5, h6 {
 .header__logo {
     font-size: 30px;
     font-weight: 700;
-    color: #00a0e0ad;
+    color: #f38181;
 }
 
 
@@ -142,7 +84,7 @@ h1, h2, h3, h4, h5, h6 {
     width: 100%;
     height: 3px;
 
-    background-color: #00a1e0;
+    background-color: #f38181;
     opacity: 0;
 
     position: absolute;
@@ -154,7 +96,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .nav__link:hover {
-    color: #00a1e0;
+    color: #f38181;
 }
 
 .nav__link:hover:after,
@@ -163,84 +105,9 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .nav__link.active {
-    color: #00a1e0;
+    color: #f38181;
 }
 
-
-/* Button */
-.btn {
-    display: inline-block;
-    vertical-align: top;
-    padding: 8px 30px;
-
-    border: 3px solid #fff;
-
-    font-size: 14px;
-    font-weight: 700;
-    color: #fff;
-    text-transform: uppercase;
-    text-decoration: none;
-
-    transition: background .1s linear, color .1s linear;
-}
-
-.btn:hover {
-    background-color: #fff;
-    color: #333;
-}
-
-
-
-/* Slider */
-/* .slider {
-    width: 100%;
-
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    z-index: 1;
-}
-
-.slider__inner {
-    display: flex;
-    justify-content: space-between;
-}
-
-.slider__item {
-    width: 23%;
-    padding: 20px 0;
-    position: relative;
-
-    border-top: 3px solid #fff;
-    opacity: .7;
-
-    font-size: 18px;
-    color: #fff;
-    text-transform: uppercase;
-}
-
-.slider__item.active {
-    opacity: 1;
-}
-
-.slider__item.active:before {
-    content: "";
-    display: block;
-    width: 70px;
-    height: 3px;
-
-    background-color: #f38181;
-
-    position: absolute;
-    top: -3px;
-    left: 0;
-    z-index: 1;
-}
-
-.slider__num {
-    font-size: 24px;
-    font-weight: 700;
-} */
 
 /* Section */
 
@@ -250,6 +117,13 @@ h1, h2, h3, h4, h5, h6 {
 .section--gray{
     width: 100%;
     background-color: #f8f8f8;
+}
+.section--works{
+    padding-bottom: 0;
+}
+.section--clients{
+    background: url("../images/clients-bg1.jpg") center no-repeat;
+    background-size:cover;
 }
 .section--map{
     padding: 40px 0;
@@ -281,14 +155,12 @@ h1, h2, h3, h4, h5, h6 {
     height: 3px;
     margin: 30px auto;
 
-    background-color: #00a1e0;
+    background-color: #f38181;
 }
 .section__text{
     color: #999;
     font-size: 15px;
 }
-
-
 
 
 /* Works */
@@ -343,44 +215,93 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 
+/* Clients */
+.clients{
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 60px;
 
+}
+.clients__item{
+    width:50%;
+    padding:0 45px 0 175px;
+    margin-bottom:60px;
+    position: relative;
+}
+.clients__image{
+    width: 125px;
+    height: 125px;
+    border: 2px solid #f38181;
+    border-radius:50%;
 
-/* Card */
-.card{
+    position: absolute;
+    top:0;
+    left: 40px;
+    z-index: 1;
+}
+.clients__name{
+    margin-bottom:5px;
+
+    font-size: 20px;
+    font-weight: 700;
+    color:#333;
+    text-transform: uppercase;
+}
+.clients__prof{
+    font-size: 20px;
+    color:#333;
+    font-weight: 300;
+    font-style: italic;
+}
+.clients__text{
+    font-size: 18px;
+    color:#333;
+}
+.clients__text:before{
+    content: "";
+    display: block;
+    width: 60px;
+    height: 3px;
+    margin: 15px 0;
+    background-color:#f38181;
+}
+
+/* video */
+.video{
     margin: 80px -15px 0;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
 }
-.card__item{
-    width: 33.33333%;
+.video__item{
+    width: auto;
     padding: 0 15px;
    
 }
-.card__inner{
+.video__inner{
      position: relative;
-    background-color: #00a1e0;
+     height: 380px;
+    background-color: #f38181;
 }
-.card__inner:hover .card__img{
+.video__inner:hover .video__img{
     transform: translate3d(-10px,-10px,0)
 }
-.card__inner:hover .card__img img{
+.video__inner:hover .video__img img{
     opacity: .3;
 }
-.card__inner:hover .card__text{
+.video__inner:hover .video__text{
     opacity: 1;
 }
-.card__img{
-    background:linear-gradient(to bottom,#e6b798 ,#00a1e0);
+.video__img{
     transition:transform .2s linear;
 }
-.card__img img{
+.video__img img{
     display:block;
     max-width: 100%;
     height: auto;
     transition:opacity .2s linear;
 }
-.card__text{
+.video__text{
     width: 100%;
     color:#fff;
     text-transform:uppercase;
@@ -397,160 +318,6 @@ h1, h2, h3, h4, h5, h6 {
     transition: opacity .2s linear;
 }
 
-
-/* Statistics */
-.statistics {
-background-color: #00a1e0;
-}
-.stat{
-    display: flex;
-    flex-wrap: wrap;
-}
-.stat__item{
-    flex:1 1 0;
-    padding: 70px 20px;
-    border-left: 1px solid #b5eae0;
-
-    text-align: center;
-    color: #fff;
-}
-.stat__item:last-child{
-    border-right: 1px solid #b5eae0;
-}
-.stat__count{
-font-size:72px;
-font-weight: 700;
-}
-.stat__text{
-font-size: 24px;
-text-transform: uppercase;
-}
-
-/* Unity */
-.unity{
-    margin: 80px 0 0;
-    display: flex;
-    align-items: center;
-    flex-wrap: wrap;
-    justify-content: space-between;
-}
-.unity__item{
-    width: 320px;
-    margin: 100px auto 20px;
-    
-    
-}
-.unity__inner{
-    position: relative;
-    background-color: #00a1e0;
-}
-.unity__inner:hover .unity__text{
-    opacity: 1;
-}
-.unity__inner:hover .unity__text__main{
-    opacity: 0;
-}
-.unity__inner:hover .unity__img{
-    transform: translate3d(0,-150px,0)
-}
-.unity__inner:hover .unity__img img{
-    opacity: .2;
-}
-.unity__img{
-    display: block;
-    widows: 100%;
-    height: auto;
-    background:linear-gradient(to bottom,#e6b798 ,#00a1e0);
-    transition:transform .35s linear;
-}
-.unity__img img{
-    display:block;
-    transition:opacity .35s linear;
-}
-.unity__text{
-    width: 100%;
-    color:#fff;
-    text-transform:uppercase;
-    /* font-weight: 100; */
-    font-size: 14px;
-    text-align: center;
-    opacity: 0;
-
-    position: absolute;
-    top: 50%;
-    left: 0;
-    z-index: 2;
-    transform:translate3d(0,-50%,0);
-    transition: opacity .6s linear;
-}
-.unity__text__main{
-    width: 100%;
-    color:#9bfffa;
-    text-transform:uppercase;
-    font-weight: 700;
-    font-size: 24px;
-    text-align: center;
-    opacity: 1;
-
-    position: absolute;
-    top: 50%;
-    left: 0;
-    z-index: 2;
-    transform:translate3d(0,-50%,0);
-    transition: opacity .1s linear;
-}
-
-/* Reviews  AFONIN*/
-.view{
-padding: 0 120px;
-
-    display: flex;
-    justify-content: space-between;
-    
-}
-.view__item{
-    padding-left: 255px;
-    position: relative;
-    
-}
-.view__photo{
-    display: block;
-    width: 200px;
-    height: 200px;
-    border: 2px solid #00a1e0;
-    border-radius:50%;
-
-    position: absolute;
-    left: 0;
-    top: -10px;
-    z-index: 1;
-}
-.view__text{
-    margin-bottom: 15px;
-    font-family: 'Montserrat', sans-serif;
-    font-style: italic;
-    font-size: 26px;
-    font-weight:300;
-    color:#999;
-}
-.view__author{
-    font-family: 'Kaushan Script',italic;
-    font-size:46px;
-    color:#333;
-}
-.view__author:before{
-    margin-right: 10px;
-    content: "";
-    display: inline-block;
-    vertical-align:middle;
-    width: 60px;
-    height: 3px;
-
-    background-color: #f38118
-
-}
-
-/* Reviews  AFONIN*/
 
 /* Map */
 .map{
@@ -598,7 +365,7 @@ padding: 0 120px;
     margin-bottom: 30px;
     font-size:46px;
     font-weight:700;
-    color:#00a1e0
+    color:#f38181
 }
 .footer__text{
     margin-bottom: 30px;
@@ -632,7 +399,7 @@ padding: 0 120px;
     margin-left: 15px;
 
     font-size: 40px;
-    color:#00a1e0;
+    color:#f38181;
 }
 
 
@@ -672,7 +439,7 @@ padding: 0 120px;
     width:40%;
     height: 40px;
 
-    background-color: #00a1e0;
+    background-color: #f38181;
     border: 0;
     cursor: pointer;
     padding:12px 30px;
@@ -690,7 +457,7 @@ padding: 0 120px;
     outline:0;
 }
 .subscribe__btn:hover{
-    background-color: #008dc5;
+    background-color: #f38181;
 }
 
 /* Copyright */
@@ -704,7 +471,7 @@ padding: 0 120px;
 }
 
 .copyright span{
-    color:#00a1e0;
+    color:#f38181;
 }
 
 
