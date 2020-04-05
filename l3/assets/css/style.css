@@ -646,11 +646,11 @@ text-transform: uppercase;
 /* Subscribe */
 .subscribe{
     width: 100%;
-    max-width: 380px;
+    max-width: 480px;
     display: flex;
 }
 .subscribe__input{
-    width: 60%;
+    width: 70%;
     height: 40px;
     padding:12px;
 
@@ -675,7 +675,7 @@ text-transform: uppercase;
 }
 
 .subscribe__btn{
-    width:40%;
+    width:30%;
     height: 40px;
 
     background-color: #00a1e0;
