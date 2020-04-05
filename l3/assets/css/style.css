@@ -360,7 +360,7 @@ h1, h2, h3, h4, h5, h6 {
 /* Statistics */
 .statistics {
 background-color: #00a1e0;
-box-shadow: 0 0 50px rgba(0,0,0,0.7);
+box-shadow: 0 0 50px rgba(0,0,0,0.85);
 }
 .stat{
     display: flex;
@@ -380,6 +380,11 @@ box-shadow: 0 0 50px rgba(0,0,0,0.7);
 .stat__count{
 font-size:72px;
 font-weight: 700;
+opacity: 0;
+}
+.stat__count__visibility{
+    opacity: 1;
+    transition: 1s;
 }
 .stat__text{
 font-size: 24px;
