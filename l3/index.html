@@ -8,23 +8,24 @@
     <link href="https://fonts.googleapis.com/css?family=Kaushan+Script|Montserrat:400,700&amp;subset=cyrillic-ext"
         rel="stylesheet">
     <script src="https://kit.fontawesome.com/c80f1962c1.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
     <title>GameDev341</title>
 </head>
 
 <body>
 
 
-    <header class="header">
+    <header class="header" id="header">
         <div class="container">
             <div class="header__inner">
                 <div class="header__logo">GameDev341</div>
 
-                <div class="nav">
-                    <a class="nav__link" href="#">About</a>
-                    <a class="nav__link" href="#">Service</a>
-                    <a class="nav__link" href="#">Blog</a>
-                    <a class="nav__link" href="#">Work</a>
-                    <a class="nav__link" href="#">Contact</a>
+                <div class="nav" id="nav">
+                    <a class="nav__link" href="#" data-scroll="#intro">Main</a>
+                    <a class="nav__link" href="#" data-scroll="#About">About</a>
+                    <a class="nav__link" href="#" data-scroll="#Work">Work</a>
+                    <a class="nav__link" href="#" data-scroll="#Reviews">Reviews</a>
+                    <a class="nav__link" href="#" data-scroll="#Contact">Contact</a>
                     <a class="nav__link" href="#">
                         <i class="fas fa-shopping-cart"></i>
                     </a>
@@ -38,7 +39,7 @@
     </header>
 
 
-    <div class="intro">
+    <div class="intro" id="intro">
         <div class="container">
             <!-- <h1 class="intro__logo"></h1> -->
             <div class="intro__inner">
@@ -75,7 +76,7 @@
         </div> -->
     </div>
 
-    <section class="section">
+    <section class="section" id="About">
         <div class="container">
             <div class="section__header">
                 <h3 class="section__suptitle">What we do</h3>
@@ -145,7 +146,7 @@
 
 
 
-    <section class="section">
+    <section class="section" id="Work">
         <div class="container">
             <div class="section__header">
                 <h3 class="section__suptitle">We work with</h3>
@@ -206,14 +207,82 @@
     </section>
 
     <!--Reviews  AFONIN -->
-    <div class="section section--gray">
+    <div class="section section--gray" id="Reviews">
         <div class="container">
             <div class="view">
-                <div class="view__item">
-                    <img class="view__photo" src="assets/images/reviews/111.png" alt="">
-                    <div class="view__text">"Это мобила? А для чего тебе нужна мобила? Чтоб сидеть в ней в интернете где
-                        такие же дебилы!?"</div>
-                    <div class="view__author">Afonin V.V.</div>
+
+                <div data-slider>
+                    <div>
+                        <div class="view__item">
+                            <img class="view__photo" src="assets/images/reviews/111.png" alt="">
+                            <div class="view__text">"Это мобила? А для чего тебе нужна мобила? Чтоб сидеть в ней в
+                                интернете где такие же дебилы!?"</div>
+                            <div class="view__author">Afonin V.V.</div>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="view__item">
+                            <img class="view__photo" src="assets/images/reviews/111.png" alt="">
+                            <div class="view__text">"Гет ц аш"</div>
+                            <div class="view__author">Afonin V.V.</div>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="view__item">
+                            <img class="view__photo" src="assets/images/reviews/111.png" alt="">
+                            <div class="view__text">"Рузаевка же важнее"</div>
+                            <div class="view__author">Afonin V.V.</div>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="view__item">
+                            <img class="view__photo" src="assets/images/reviews/111.png" alt="">
+                            <div class="view__text">"Аза ваза понимаешь ли"</div>
+                            <div class="view__author">Afonin V.V.</div>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="view__item">
+                            <img class="view__photo" src="assets/images/reviews/111.png" alt="">
+                            <div class="view__text">"Генглик, вон отсюда"</div>
+                            <div class="view__author">Afonin V.V.</div>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="view__item">
+                            <img class="view__photo" src="assets/images/reviews/111.png" alt="">
+                            <div class="view__text">"Фуфло"</div>
+                            <div class="view__author">Afonin V.V.</div>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="view__item">
+                            <img class="view__photo" src="assets/images/reviews/111.png" alt="">
+                            <div class="view__text">"Совсем паскаль вас загубил"</div>
+                            <div class="view__author">Afonin V.V.</div>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="view__item">
+                            <img class="view__photo" src="assets/images/reviews/111.png" alt="">
+                            <div class="view__text">"Таланов добрый а я злой</div>
+                            <div class="view__author">Afonin V.V.</div>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="view__item">
+                            <img class="view__photo" src="assets/images/reviews/111.png" alt="">
+                            <div class="view__text">"Накладываю на вас санкции"</div>
+                            <div class="view__author">Afonin V.V.</div>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="view__item">
+                            <img class="view__photo" src="assets/images/reviews/111.png" alt="">
+                            <div class="view__text">"«Не за что» означает «Не за что говорить пожалуйста»"</div>
+                            <div class="view__author">Afonin V.V.</div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -234,7 +303,7 @@
     </section>
 
 
-    <footer class="footer footer--img">
+    <footer class="footer footer--img" id="Contact">
         <div class="container">
             <div class="footer__inner">
                 <div class="footer__col">
@@ -274,6 +343,13 @@
     </footer>
 
 
+
+
+    <!-- JS -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script src="assets/Js/app.js"></script>
+    <!-- JS -->
 
 </body>
 

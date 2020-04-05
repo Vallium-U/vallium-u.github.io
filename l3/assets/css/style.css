@@ -97,6 +97,19 @@ h1, h2, h3, h4, h5, h6 {
     z-index: 1000;
 }
 
+.header.fixed{
+    padding: 10px 0;
+    background-color: #eeebe2;
+    box-shadow: 0 5px 10px rgba(0,0,0,0.3);
+
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+
+    transform: translate3d(0,0,0)
+}
+
 .header__inner {
     display: flex;
     justify-content: space-between;
@@ -296,15 +309,18 @@ h1, h2, h3, h4, h5, h6 {
     justify-content: space-between;
 }
 .card__item{
+    
     width: 33.33333%;
     padding: 0 15px;
    
 }
 .card__inner{
-     position: relative;
+    
+    position: relative;
     background-color: #00a1e0;
 }
 .card__inner:hover .card__img{
+    box-shadow: 10px 10px 10px rgba(0,0,0,0.7);
     transform: translate3d(-10px,-10px,0)
 }
 .card__inner:hover .card__img img{
@@ -344,6 +360,7 @@ h1, h2, h3, h4, h5, h6 {
 /* Statistics */
 .statistics {
 background-color: #00a1e0;
+box-shadow: 10px 10px 10px rgba(0,0,0,0.3);
 }
 .stat{
     display: flex;
@@ -378,6 +395,7 @@ text-transform: uppercase;
     justify-content: space-between;
 }
 .unity__item{
+    box-shadow: 0 10px 10px rgba(0,0,0,0.3);
     width: 320px;
     margin: 100px auto 20px;
     
@@ -394,6 +412,7 @@ text-transform: uppercase;
     opacity: 0;
 }
 .unity__inner:hover .unity__img{
+    
     transform: translate3d(0,-150px,0)
 }
 .unity__inner:hover .unity__img img{
@@ -445,16 +464,19 @@ text-transform: uppercase;
 
 /* Reviews  AFONIN*/
 .view{
-padding: 0 120px;
+    box-shadow: 0 0 50px rgba(0,0,0,0.3);
+    padding:0 15px;
+    position: relative;
 
-    display: flex;
-    justify-content: space-between;
-    
+}
+.view .slick-slider{
+    padding: 15px 60px;
 }
 .view__item{
+    min-height: 210px;
     padding-left: 255px;
+    padding-bottom: 30px;
     position: relative;
-    
 }
 .view__photo{
     display: block;
@@ -465,10 +487,12 @@ padding: 0 120px;
 
     position: absolute;
     left: 0;
-    top: -10px;
+    top: 10px;
     z-index: 1;
 }
 .view__text{
+    max-width: 800px;
+    margin-top: 30px;
     margin-bottom: 15px;
     font-family: 'Montserrat', sans-serif;
     font-style: italic;
@@ -490,7 +514,41 @@ padding: 0 120px;
     height: 3px;
 
     background-color: #f38118
+}
 
+.slick-arrow{
+    display: block;
+    font-size: 0;
+    color:transparent;
+    cursor: pointer;
+    
+    border:0;
+    background:none;
+
+    position: absolute;
+    top: 50%;
+    z-index: 1;
+    transform: translateY(-50%)
+}
+.slick-arrow:focus{
+    outline:0;
+}
+.slick-arrow:after {
+    content: "";
+    display: block;
+    width:16px;
+    height: 16px;
+
+    border-top: 2px solid #ccc;
+    border-left: 2px solid #ccc;
+}
+.slick-prev{
+    left: 0;
+    transform:rotate(-45deg);
+}
+.slick-next{
+    right: 0;
+    transform:rotate(135deg);
 }
 
 /* Reviews  AFONIN*/
