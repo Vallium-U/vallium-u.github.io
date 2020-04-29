@@ -11,8 +11,8 @@
 
 .about__content{
     margin-top: 30px;
-    width: 50%;
-    padding-right: 48px;
+    width: 60%;
+    padding-right: 68px;
 }
 
 .about__title{
@@ -29,6 +29,23 @@
     font-size: 92px;
     font-weight: 700;
     color: rgba(@gray-light,0.7);
+    text-shadow: 0 0 60px rgba(255,255,255,.4);//@white 0.4
+    text-transform: uppercase;
+/* Clip Background Image */
+	  background: url(http://f.cl.ly/items/010q3E1u3p2Q0j1L1S1o/animated_text_fill.png) repeat-y;
+	  -webkit-background-clip: text;
+	  background-clip: text;
+    /* Animate Background Image */
+	  -webkit-text-fill-color: transparent;
+	  animation: textfillanim 80s linear infinite;
+    /* Activate hardware acceleration for smoother animations */
+	  transform: translate3d(0,0,0);
+	  backface-visibility: hidden;
+}
+/* Animate Background Image */
+@keyframes textfillanim {
+	0% { background-position: 0% 50%; }
+	100% { background-position: 100% 50%; }
 }
 
 .about__text{
@@ -41,5 +58,14 @@
 }
 
 .about__photo{
-    width: 50%;
+    align-self: center;
+    width: 40%;
+    border-radius: 999px;
+    filter: drop-shadow(0 0 0 @white) saturate(0) blur(0.5em);
+    transition: all 1.5s linear 50ms;
+
+    &:hover {
+        filter: drop-shadow(0 0 150px @orange) saturate(1) blur(0em);
+        transition: all .2s linear 50ms;
+      }
 }
