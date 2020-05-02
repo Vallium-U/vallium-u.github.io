@@ -18,9 +18,11 @@
     //border: 1px solid @gray-light;
     box-shadow: -9px -9px 30px @reviews-light-gray, 9px 9px 30px @reviews-dark-gray;
     
-    transition: box-shadow .2s linear;
+    transition: box-shadow .2s linear,
+    transform .2s linear;
 
     &:hover{
+        transform: scale(0.95);
         box-shadow: 3px 3px 5px 0 @reviews-light-gray, -3px -3px 5px @reviews-dark-gray,
         inset 4px 4px 6px 0 @reviews-dark-gray, inset -2px -3px 5px @reviews-light-gray;
 
