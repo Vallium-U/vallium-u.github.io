@@ -1,0 +1,62 @@
+// main: ../style.less
+
+.portfolio{
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 -15px;
+}
+.portfolio__column{
+    flex-basis: 33.333%;
+    padding: 15px;
+
+    color:@gray-light;
+}
+.portfolio__item{
+
+    overflow: hidden;
+    border-radius: 20px;
+    //border: 1px solid @gray-light;
+    box-shadow: -9px -9px 30px @reviews-light-gray, 9px 9px 30px @reviews-dark-gray;
+    
+    transition: box-shadow .2s linear;
+
+    &:hover{
+        box-shadow: 3px 3px 5px 0 @reviews-light-gray, -3px -3px 5px @reviews-dark-gray,
+        inset 4px 4px 6px 0 @reviews-dark-gray, inset -2px -3px 5px @reviews-light-gray;
+
+    }
+}
+.portfolio__img{
+    display: block;
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+.portfolio__item-content{
+    padding: 15px;
+    
+}
+
+.portfolio__content-category{
+    margin-bottom: 10px;
+    text-transform: uppercase;
+    color: @orange;
+    font-size: 13px;
+}
+
+.portfolio__content-title{
+    font-size: 16px;
+    color:@gray-light;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+
+.text-center{
+    &--portfolio{
+    margin-top: 25px;
+    text-transform: uppercase;
+    color: @orange;
+    font-size: 13px;
+    text-shadow: 0 0px 10px @orange;
+    }
+}
