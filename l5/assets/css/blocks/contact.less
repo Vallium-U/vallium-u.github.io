@@ -1,0 +1,80 @@
+// main: ../style.less
+.contact{
+    margin: 10px;
+    padding: 0px;
+
+    // background-image: radial-gradient(@gray-light 1px, transparent 1px);
+    // background-size: 25px 25px;
+    // background-position: center;
+    z-index: -1;
+
+}
+.contact__inner{
+    display: flex;
+    border-top: 1px solid rgba(@gray-light, 0.4);
+    padding: 60px 0;
+
+    
+}
+.contact__content{
+    width: 50%;
+    margin-right: 50px;
+}
+.contact__photo{
+    width: 50%;
+
+    &--img{
+        filter: blur(10px);
+        width: 100%;
+        height: auto;
+
+        transition: filter .3s linear;
+
+        &:hover{
+            filter: blur(0px);
+        }
+    }
+}
+
+.contact__title{
+    font-size: 45px;
+    color: @gray-light;
+    font-weight: 700;
+    text-transform: uppercase;
+
+    margin-top: 100px;
+    margin-bottom: 0px;
+
+}
+
+.contact__subtitle{
+    font-size: 32px;
+    color: @gray-light;
+    font-weight: 200;
+
+    margin: 10px auto;
+}
+
+.contact__data{
+    line-height: 1.4;
+}
+.contact__phone{
+    font-size: 22px;
+    font-weight: 200;
+    color: @orange;
+    margin-top: 50px;
+    text-shadow: 0 0px 10px @orange;
+
+}
+
+.contact__email{
+    font-size: 22px;
+    font-weight: 200;
+    color: @orange;
+    text-shadow: 0 0px 10px @orange;
+}
+
+.social__contact{
+    margin: 0;
+    padding: 0;
+}

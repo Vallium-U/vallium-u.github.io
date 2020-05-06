@@ -2,8 +2,8 @@
 
 .social{
     margin-bottom: 42px;
-  
     display: flex;
+
 }
 
 .social__link{
@@ -14,5 +14,16 @@
 
     &:hover{
         transform: translateY(-5px);
+    }
+
+    &--contact{
+        text-decoration: none;
+        margin: 75px auto;
+        // transform: translate(50%,50%);
+        transition: transform .2s linear;
+    
+        &:hover{
+            transform: translateY(5px);
+        } 
     }
 }
