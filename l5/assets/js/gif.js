@@ -1,4 +1,7 @@
 $(function() {
+
+
+
     $('#giflist li a img').hover(function() {
         // on mouse enter
         var customdata = $(this).parent().attr('href');
