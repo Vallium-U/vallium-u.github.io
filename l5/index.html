@@ -50,7 +50,7 @@
                     <a class="nav__link" href="#" data-scroll="#review">Reviews</a>
                     <a class="nav__link" href="#" data-scroll="#work">Work</a>
                     <a class="nav__link" href="#" data-scroll="#contact">Contact</a>
-                    <a class="nav__link nav__link--btn" href="#">hire me</a>
+                    <a class="nav__link nav__link--btn" href="#" data-modal="#modal_hire_me">hire me</a>
                 </nav>
             </div>
         </div>
@@ -95,7 +95,7 @@
                         </a>
                     </div>
 
-                    <a class="btn " href="# ">Hire me</a>
+                    <a class="btn " href="#" data-modal="#modal_hire_me">Hire me</a>
                     <button class="btn " type="button ">See my resume</button>
                 </div>
 
@@ -122,7 +122,7 @@
                             culpa.
                         </p>
                     </div>
-                    <a class="btn " href="# ">Hire me</a>
+                    <a class="btn " href="# " data-modal="#modal_hire_me">Hire me</a>
                     <button class="btn " type="button ">See my resume</button>
                 </div>
 
@@ -360,13 +360,16 @@
     <!-- Contact -->
     <div class="contact" id="contact">
         <div class="container">
-            <div class="contact__inner  text-center">
+            <div class="contact__inner">
                 <div class="contact__content">
                     <div class="contact__data">
-                        <h2 class="contact__title">Contact</h2>
-                        <h3 class="contact__subtitle">Phone & Email</h3>
-                        <div class="contact__phone">8(800)5553535</div>
-                        <div class="contact__email">mlobaruov@gmail.com</div>
+                        <h2 class="contact__title">Contact to me</h2>
+                        <h3 class="contact__subtitle">My social media</h3>
+                        <ul class="contact__info">
+                            <li class="contact__phone">8(800)5553535</li>
+                            <li class="contact__email">mlobaruov@gmail.com</li>
+                        </ul>
+
                         <div class=" social social">
                             <a class=" social__link  social__link--contact " href="https://www.youtube.com/channel/UC6TRJNWqGpWgxwnwA06XFiQ?view_as=subscriber " target="_blank ">
                                 <img width="50 " height="50 " src="assets/images/icon/youtube.svg " lt=" ">
@@ -389,6 +392,7 @@
             </div>
         </div>
     </div>
+    <!-- /.Contact -->
 
 
     <!-- Footer -->
@@ -420,7 +424,7 @@
                     <a class="footer__nav-link " href=" " data-scroll="#review">Reviews</a>
                     <a class="footer__nav-link " href=" " data-scroll="#work">Work</a>
                     <a class="footer__nav-link " href=" " data-scroll="#contact">Contact</a>
-                    <a class="footer__nav-link footer__nav-link--btn " href=" ">Hire me</a>
+                    <a class="footer__nav-link footer__nav-link--btn " href="# " data-modal="#modal_hire_me">Hire me</a>
                 </div>
             </div>
         </div>
@@ -429,8 +433,42 @@
 
 
 
+    <!-- Modal windows -->
+    <div class="modal" id="modal_hire_me">
+        <div class="modal__inner modal__inner--sm">
+            <button class="modal__close" type="button" data-close>
+                <img src="assets/images/modalico/Close.svg" width="24" height="24" alt="Close">
+            </button>
 
+            <div class="modal__contact">
+                <div class="modal__left">
+                    <h3 class="modal__title  mb-0">Write on!</h3>
+                    <h4 class="modal__subtitle">Call me or send request</h4>
+                    <ul class="modal__contact-info">
+                        <li class="modal__contact-info-item"><img class="modal__contact-info-ico" src="assets/images/modalico/Phone.svg" width="20" height="20" alt=""> 8(800)5553535
+                        </li>
+                        <li class="modal__contact-info-item"> <img class="modal__contact-info-ico" src="assets/images/modalico/Mail.svg" width="20" height="20" alt=""> mlobaruov@gmail.com</li>
+                    </ul>
 
+                    <form class="form" action="/" method="POST">
+                        <div class="form__group">
+                            <label class="form__label" for="input-email">Adress e-mail</label>
+                            <input class="form__input" type="text" id="input-email" name="input-email" placeholder="Adress e-mail">
+                        </div>
+                        <div class="form__group">
+                            <label class="form__label" for="form__textarea">Request</label>
+                            <textarea class="form__textarea" name="input-text" id="input-text" placeholder="Type your request..."></textarea>
+                        </div>
+                        <div class="text-right">
+                            <button class="btn btn--send" type="submit">Send</button>
+                        </div>
+                    </form>
+                </div>
+                <div class="modal__right"></div>
+            </div>
+        </div>
+    </div>
+    <!-- Modal windows -->
 
 
 
@@ -443,6 +481,8 @@
     <script src="assets/js/preloader.js"></script>
     <!-- Filter -->
     <script src="assets/js/filter.js"></script>
+    <!-- Modal -->
+    <script src="assets/js/modal.js"></script>
     <!-- gif -->
     <script type="text/javascript " src="assets/js/gif.js "></script>
     <!-- slider -->
