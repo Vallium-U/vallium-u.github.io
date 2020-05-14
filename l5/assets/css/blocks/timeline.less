@@ -1,0 +1,85 @@
+// main: ../style.less
+
+.timeline{
+    display: flex;
+    width: 100%;
+    max-width: 720px;
+    margin: 40px auto;
+    position: relative;
+
+    &:before{
+        content: "";
+        display: block;
+        width: 1px;
+        height: 100%;
+
+        background-color: @black;
+        position: absolute;
+        top: 0;
+        left: 50%;
+        z-index: 1;
+    }
+
+}
+
+.timeline__col{
+    width: 50%;
+
+    &--left{
+        text-align: right;
+        padding-right: 48px;
+    }
+
+    &--right{
+        text-align: left;
+        padding-left: 48px;
+    }
+}
+
+
+.timeline__title{
+    margin: 0;
+    margin-bottom: 40px;
+    font-size: 18px;
+    color: @black;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+
+.timeline__item{
+    margin-bottom: 38px;
+
+    &:last-child{
+        margin-bottom: 0;
+    }
+}
+
+.timeline__date{
+    display: block;
+    text-decoration: underline;
+    font-size: 14px;
+    color: @black;
+    margin-bottom: 12px;
+}
+.timeline__subtitle{
+    margin-bottom: 5px;
+    font-size: 16px;
+    color: @black;
+    font-weight: 700;
+}
+
+.timeline__profession{
+    font-size: 14px;
+    font-style: italic;
+    color: @black;
+
+}
+
+.timeline__text{
+    margin-top: 10px;
+    font-size: 12px;
+    font-weight: 300;
+    color: @gray;
+    line-height: 1.5;
+
+}

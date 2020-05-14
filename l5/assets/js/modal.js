@@ -12,7 +12,7 @@ $(function() {
         $("body").addClass('no-scroll');
 
         setTimeout(function() {
-            $(modalId).find(".modal__inner").css({
+            $(modalId).find(".modal__dialog").css({
                 transform: "scale(1)"
             });
         }, 200);
@@ -25,7 +25,7 @@ $(function() {
         let $this = $(this);
         let modalParent = $this.parents('.modal');
 
-        modalParent.find(".modal__inner").css({
+        modalParent.find(".modal__dialog").css({
             transform: "scale(0)"
         });
         setTimeout(function() {
@@ -36,7 +36,7 @@ $(function() {
 
     $(".modal").on("click", function(event) {
         let $this = $(this);
-        $this.find(".modal__inner").css({
+        $this.find(".modal__dialog").css({
             transform: "scale(0)"
         });
         setTimeout(function() {
@@ -46,7 +46,7 @@ $(function() {
 
     });
 
-    $(".modal__inner").on("click", function(event) {
+    $(".modal__dialog").on("click", function(event) {
         event.stopPropagation();
 
     });

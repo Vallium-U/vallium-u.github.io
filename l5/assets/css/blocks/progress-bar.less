@@ -1,0 +1,38 @@
+// main: ../style.less
+
+.progress-bar{
+    margin-bottom: 38px;
+}
+
+.progress-bar__item{
+    display: flex;
+    align-items: center;
+    margin-bottom: 3px;
+}
+
+.progress-bar__left{
+    width: 30%;
+}
+.progress-bar__title{
+    font-size: 14px;
+    font-weight: 300;
+    color: @gray;
+}
+
+.progress-bar__right{
+    padding-left: 26px;
+
+}
+
+.progress-bar__bar{
+    width: 150px;
+    height: 6px;
+    border-radius: 6px;
+    background-color: fade(@gray-light,50%);
+}
+
+.progress-bar__progress{
+    height: 100%;
+    border-radius: 6px;
+    background-color: fade(@gray,100%);
+}
