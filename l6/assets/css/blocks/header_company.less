@@ -1,0 +1,33 @@
+// main: ../style.less
+
+.company{
+    width: 50%;
+    display: inline-flex;
+    flex-wrap: wrap;
+    align-items: center;
+    text-align: center;
+    height: auto;
+    color: @blue;
+}
+.company__logo{
+    display: inline-flex;
+    flex-wrap: wrap;
+    align-items: center;
+    text-align: center;
+
+    &--img{
+        text-align: right;
+        width: 64px;
+        height: 64px;
+
+        border-radius: 50%;
+        border: 2px solid @blue;
+    }
+}
+
+.company__name{
+    margin: 0 auto;
+    font-size: 38px;
+    text-transform: uppercase;
+    font-weight: 700;
+}
