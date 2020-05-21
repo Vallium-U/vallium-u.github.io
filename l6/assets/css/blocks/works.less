@@ -1,0 +1,96 @@
+// main: ../style.less
+
+.works{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.works__inner{
+    width: 1200px;
+    margin: 20px auto;
+    display: flex;
+    flex-wrap: wrap;
+    border: 1px solid @gray-light;
+    border-radius: 20px;
+//    z-index: 10;
+    overflow: hidden;
+}
+
+.works__title{
+    margin: 20px auto 0px auto;
+    text-align: center;
+    font-size: 38px;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: @blue-eyes;
+
+}
+
+.works__subtitle{
+    margin: 20px auto;
+    text-align: center;
+    font-size: 25px;
+    font-weight: 300;
+    text-transform: uppercase;
+    color: @blue-eyes;
+}
+
+.works__item{
+    width: 320px;
+    height: auto;
+    margin: 20px auto;
+    position: relative;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.works__card{
+
+    overflow: hidden;
+    background: @gray-dark;
+    border-radius: 20px;
+    border: 1px solid @blue-eyes;
+
+}
+
+.works__img{
+    margin: 0;
+    padding: 0;
+    display: flex;
+    width: 100%;
+    height: auto;
+    border-bottom: 1px solid @blue-eyes;
+    &--img{
+        width: 100%;
+        height: 100%;
+    }
+}
+
+.works__name{
+    padding: 10px 25px 0px 25px;
+    font-size: 14px;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: @amethyst;
+}
+
+.works__position{
+    text-align: right;
+    padding: 0px 25px 5px 25px;
+    font-size: 14px;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: @amethyst;
+    border-radius: 20px;
+    border-bottom: 1px solid @blue-eyes;
+}
+
+.works__text{
+    padding: 20px 25px;
+    font-size: 14px;
+    color: @gray-light;
+    font-weight: 200;
+}

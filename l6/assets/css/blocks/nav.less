@@ -13,7 +13,7 @@
     position: relative;
 
     font-size: 20px;
-    color: @gray-light;
+    color: @blue-eyes;
     text-transform: uppercase;
     font-weight: 700;
     text-decoration: none;
@@ -23,7 +23,7 @@
         content: "";
         width: 0;
         height: 2px;
-        background-color: @blue;
+        background-color: @blue-eyes;
 
         position: absolute;
         bottom: -5px;
@@ -37,8 +37,8 @@
     &:hover:not(.nav__link--btn) {
         &:after{
             width: 100%;
-            text-shadow: 0 0px 20px @blue;
-            color: rgba(@blue, 0.75);
+            text-shadow: 0 0px 20px @blue-eyes;
+            color: rgba(@blue-eyes, 0.75);
         }
     }
 
@@ -47,16 +47,17 @@
         box-shadow: 0 0px 25px transparent;
         text-shadow: 0 0px 10px transparent;
         padding: 30px 30px;
-        color: rgba(@gray-light, 0.25);
-        border: 1px solid @gray-light;
+        color: rgba(@blue-eyes, 0.25);
+        border: 1px solid @blue-eyes;
         border-radius: 20px;
 
         transition: text-shadow .6s linear,
         color .6s linear;
 
         &:hover{
-        text-shadow: 0 0px 20px @blue;
-        color: rgba(@blue, 1);
+        text-shadow: 0 0px 20px @blue-eyes;
+        color: rgba(@blue-eyes, 1);
         }
     }
 }
+
