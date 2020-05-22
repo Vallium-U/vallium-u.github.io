@@ -15,27 +15,27 @@
 </head>
 
 <body>
-    <div class="header">
+    <header class="header">
         <div class="container">
             <div class="header__inner">
                 <div class="header_company">
                     <h1 class="header_company__name">Company name</h1>
                 </div>
                 <div class="header_company__logo">
-                        <img class="header_company__logo header_company__logo--img" src="https://placehold.it/64/333" alt="#" width="64" height="64">
-                    </div>
+                    <img class="header_company__logo header_company__logo--img" src="https://placehold.it/64/333" alt="#" width="64" height="64">
+                </div>
                 <div class="nav">
                     <a class="nav__link" href="#" data-scroll="#about">About us</a>
                     <a class="nav__link" href="#" data-scroll="#work">Works</a>
                     <a class="nav__link" href="#" data-scroll="#company">Company</a>
                     <a class="nav__link" href="#" data-scroll="#contact">Contact</a>
-                    <a class="nav__link nav__link--btn" href="#" data-modal="#modal_hire_me">Write us</a>
+                    <!--                    <a class="nav__link nav__link--btn" href="#" data-modal="#modal_hire_me">Write us</a>-->
                 </div>
             </div>
         </div>
-    </div>
+    </header>
 
-    <div class="intro">
+    <div class="intro" id="about">
         <div class="container">
             <div class="intro__inner">
                 <div class="intro__content">
@@ -55,13 +55,13 @@
         </div>
     </div>
 
-    <div class="works">
+    <div class="works" id="work">
         <div class="container">
             <div class="works__inner">
-               <h2 class="works__title">Our workers</h2>
-               <h2 class="works__subtitle">We have a lot Programmers / designers / ingeneers / UI &amp; UX specialists</h2>
+                <h2 class="works__title">Our workers</h2>
+                <h2 class="works__subtitle">We have a lot Programmers / designers / ingeneers / UI &amp; UX specialists</h2>
                 <div class="works__item">
-                   <div class="works__card">
+                    <div class="works__card">
                         <div class="works__img">
                             <img class="work__img work__img--img" src="https://placehold.it/320x200/000" alt="">
                         </div>
@@ -70,8 +70,8 @@
                         <div class="works__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odit, laudantium dignissimos, dolorem perspiciatis ratione sapiente quod eaque harum sequi vitae optio? Reiciendis rerum, natus maxime. At explicabo doloremque, autem necessitatibus.</div>
                     </div>
                 </div>
-                   <div class="works__item">
-                   <div class="works__card">
+                <div class="works__item">
+                    <div class="works__card">
                         <div class="works__img">
                             <img class="work__img work__img--img" src="https://placehold.it/320x200/000" alt="">
                         </div>
@@ -80,8 +80,8 @@
                         <div class="works__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odit, laudantium dignissimos, dolorem perspiciatis ratione sapiente quod eaque harum sequi vitae optio? Reiciendis rerum, natus maxime. At explicabo doloremque, autem necessitatibus.</div>
                     </div>
                 </div>
-                   <div class="works__item">
-                   <div class="works__card">
+                <div class="works__item">
+                    <div class="works__card">
                         <div class="works__img">
                             <img class="work__img work__img--img" src="https://placehold.it/320x200/000" alt="">
                         </div>
@@ -90,8 +90,8 @@
                         <div class="works__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odit, laudantium dignissimos, dolorem perspiciatis ratione sapiente quod eaque harum sequi vitae optio? Reiciendis rerum, natus maxime. At explicabo doloremque, autem necessitatibus.</div>
                     </div>
                 </div>
-                  <div class="works__item">
-                   <div class="works__card">
+                <div class="works__item">
+                    <div class="works__card">
                         <div class="works__img">
                             <img class="work__img work__img--img" src="https://placehold.it/320x200/000" alt="">
                         </div>
@@ -100,8 +100,8 @@
                         <div class="works__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odit, laudantium dignissimos, dolorem perspiciatis ratione sapiente quod eaque harum sequi vitae optio? Reiciendis rerum, natus maxime. At explicabo doloremque, autem necessitatibus.</div>
                     </div>
                 </div>
-                   <div class="works__item">
-                   <div class="works__card">
+                <div class="works__item">
+                    <div class="works__card">
                         <div class="works__img">
                             <img class="work__img work__img--img" src="https://placehold.it/320x200/000" alt="">
                         </div>
@@ -110,8 +110,8 @@
                         <div class="works__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odit, laudantium dignissimos, dolorem perspiciatis ratione sapiente quod eaque harum sequi vitae optio? Reiciendis rerum, natus maxime. At explicabo doloremque, autem necessitatibus.</div>
                     </div>
                 </div>
-                  <div class="works__item">
-                   <div class="works__card">
+                <div class="works__item">
+                    <div class="works__card">
                         <div class="works__img">
                             <img class="work__img work__img--img" src="https://placehold.it/320x200/000" alt="">
                         </div>
@@ -124,7 +124,7 @@
         </div>
     </div>
 
-    <div class="company">
+    <div class="company" id="company">
         <div class="container__large">
             <div class="company__inner">
                 <div class="company__img">
@@ -133,10 +133,13 @@
                 <div class="company__info">
                     <div class="company__title">Company Name</div>
                     <div class="company__subtitle">Something about</div>
-                    <div class="company__text"><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias itaque nam dignissimos ex voluptatem eum harum laboriosam magnam modi quia! Fuga ut nulla consequuntur eius ipsum dolorum, pariatur nostrum nobis!</p>
+                    <div class="company__text">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias itaque nam dignissimos ex voluptatem eum harum laboriosam magnam modi quia! Fuga ut nulla consequuntur eius ipsum dolorum, pariatur nostrum nobis!</p>
                         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias itaque nam dignissimos ex voluptatem eum harum laboriosam magnam modi quia! Fuga ut nulla consequuntur eius ipsum dolorum, pariatur nostrum nobis! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias itaque nam dignissimos ex voluptatem eum harum laboriosam magnam modi quia! Fuga ut nulla consequuntur eius ipsum dolorum, pariatur nostrum nobis!</p>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias itaque nam dignissimos ex voluptatem eum harum laboriosam magnam modi quia! Fuga ut nulla consequuntur eius ipsum dolorum, pariatur nostrum nobis!</p><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias itaque nam dignissimos ex voluptatem eum harum laboriosam magnam modi quia! Fuga ut nulla consequuntur eius ipsum dolorum, pariatur nostrum nobis! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias itaque nam dignissimos ex voluptatem eum harum laboriosam magnam modi quia! Fuga ut nulla consequuntur eius ipsum dolorum, pariatur nostrum nobis!</p>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias itaque nam dignissimos ex voluptatem eum harum laboriosam magnam modi quia! Fuga ut nulla consequuntur eius ipsum dolorum, pariatur nostrum nobis!</p></div>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias itaque nam dignissimos ex voluptatem eum harum laboriosam magnam modi quia! Fuga ut nulla consequuntur eius ipsum dolorum, pariatur nostrum nobis!</p>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias itaque nam dignissimos ex voluptatem eum harum laboriosam magnam modi quia! Fuga ut nulla consequuntur eius ipsum dolorum, pariatur nostrum nobis! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias itaque nam dignissimos ex voluptatem eum harum laboriosam magnam modi quia! Fuga ut nulla consequuntur eius ipsum dolorum, pariatur nostrum nobis!</p>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias itaque nam dignissimos ex voluptatem eum harum laboriosam magnam modi quia! Fuga ut nulla consequuntur eius ipsum dolorum, pariatur nostrum nobis!</p>
+                    </div>
                     <div class="company__social">
                         <a class="social__link " href="https://www.youtube.com/channel/UC6TRJNWqGpWgxwnwA06XFiQ?view_as=subscriber " target="_blank">
                             <img width="30 " height="30 " src="assets/img/social/youtube.svg" lt=" ">
@@ -156,7 +159,7 @@
         </div>
     </div>
 
-    <div class="map" >
+    <div class="map">
         <div class="container-large">
             <div class="map__inner"><iframe class="map__frame" id="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d37342.183560951096!2d45.163428482090126!3d54.19979418323874!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4144080b567650ad%3A0x69a0cfaaa1416941!2z0KHQsNGA0LDQvdGB0LosINCg0LXRgdC_LiDQnNC-0YDQtNC-0LLQuNGP!5e0!3m2!1sru!2sru!4v1590077079397!5m2!1sru!2sru" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
             </div>
@@ -164,19 +167,22 @@
         </div>
     </div>
 
-    <div class="contact">
+    <div class="contact" id="contact">
         <div class="container">
             <div class="contact__inner">
-               <div class="contact__obj">
+                <div class="contact__obj">
                     <div class="contact__title">Contact</div>
                     <div class="contact__subtitle">Contact us in any way convenient for you</div>
                     <div class="contact__info">
-                       <div class="contact__text"><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repudiandae necessitatibus perferendis quasi, magnam ratione doloribus reprehenderit, similique ex, adipisci eum excepturi laborum dolorem rerum. Perspiciatis, delectus rem officiis ut sit!</p><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repudiandae necessitatibus perferendis quasi, magnam ratione doloribus reprehenderit, similique ex, adipisci eum excepturi laborum dolorem rerum. Perspiciatis, delectus rem officiis ut sit! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repudiandae necessitatibus perferendis quasi, magnam ratione doloribus reprehenderit, similique ex, adipisci eum excepturi laborum dolorem rerum. Perspiciatis, delectus rem officiis ut sit!</p></div>
+                        <div class="contact__text">
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repudiandae necessitatibus perferendis quasi, magnam ratione doloribus reprehenderit, similique ex, adipisci eum excepturi laborum dolorem rerum. Perspiciatis, delectus rem officiis ut sit!</p>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repudiandae necessitatibus perferendis quasi, magnam ratione doloribus reprehenderit, similique ex, adipisci eum excepturi laborum dolorem rerum. Perspiciatis, delectus rem officiis ut sit! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repudiandae necessitatibus perferendis quasi, magnam ratione doloribus reprehenderit, similique ex, adipisci eum excepturi laborum dolorem rerum. Perspiciatis, delectus rem officiis ut sit!</p>
+                        </div>
                         <ul class="contact__contact-info">
-                        <li class="contact__contact-info-item"><img class="contact__contact-info-ico" src="assets/img/contact/phone.svg" width="20" height="20" alt=""> 8(800)5553535
-                        </li>
-                        <li class="contact__contact-info-item"> <img class="contact__contact-info-ico" src="assets/img/contact/email.svg" width="20" height="20" alt=""> mlobaruov@gmail.com</li>
-                    </ul>
+                            <li class="contact__contact-info-item"><img class="contact__contact-info-ico" src="assets/img/contact/phone.svg" width="20" height="20" alt=""> 8(800)5553535
+                            </li>
+                            <li class="contact__contact-info-item"> <img class="contact__contact-info-ico" src="assets/img/contact/email.svg" width="20" height="20" alt=""> mlobaruov@gmail.com</li>
+                        </ul>
                         <div class="contact__social">
                             <a class="social__link " href="https://www.youtube.com/channel/UC6TRJNWqGpWgxwnwA06XFiQ?view_as=subscriber " target="_blank">
                                 <img width="30 " height="30 " src="assets/img/social/youtube.svg" lt=" ">
@@ -191,7 +197,7 @@
                                 <img width="30 " height="30 " src="assets/img/social/vk.svg" lt=" ">
                             </a>
                         </div>
-                </div>
+                    </div>
                 </div>
                 <div class="contact__img">
                     <img class="contact__img contact__img--img" src="https://placehold.it/1920x1080/000" alt="">
@@ -209,9 +215,9 @@
         </div>
     </footer>
 
-<!--    JS-->
-<!--    <script src="assets/js/map.js"></script>-->
-<!--<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDcNTJGLmppJoLPA6ECZQRLlA2nIVyXdw4&callback=myMap" async defer></script>-->
-<!--   <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDcNTJGLmppJoLPA6ECZQRLlA2nIVyXdw4&callback=myMap" async defer></script>-->
+    <!--    JS-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js "></script>
+    <!-- scroll-->
+    <script src="assets/js/scroll.js"></script>
 
 </body></html>

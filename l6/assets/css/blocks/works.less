@@ -45,6 +45,7 @@
     justify-content: space-around;
     align-items: center;
     flex-wrap: wrap;
+
 }
 
 .works__card{
@@ -53,7 +54,16 @@
     background: @gray-dark;
     border-radius: 20px;
     border: 1px solid @blue-eyes;
+    transform: scale(0.9);
+       box-shadow: 0 0 0 0 @black;
 
+    transition: box-shadow .2s linear,
+        transform .2s linear;
+
+    &:hover{
+        transform: scale(1);
+        box-shadow: 0 0 25px 5px @black;
+    }
 }
 
 .works__img{

@@ -76,5 +76,30 @@
 }
 
 .contact__social{
-    text-align: right;
+    margin-left: 75%;
+    width: 25%;
+    display: flex;
 }
+
+.social__link{
+    text-decoration: none;
+    margin: 0 auto;
+    // transform: translate(50%,50%);
+    transition: transform .2s linear;
+
+    &:hover{
+        transform: translateY(-5px);
+    }
+
+    &--contact{
+        text-decoration: none;
+        margin: 75px auto;
+        // transform: translate(50%,50%);
+        transition: transform .2s linear;
+
+        &:hover{
+            transform: translateY(5px);
+        }
+    }
+}
+
