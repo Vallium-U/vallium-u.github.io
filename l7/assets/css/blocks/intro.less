@@ -1,0 +1,62 @@
+// main: ../style.less
+
+
+
+.intro__title{
+    font-size: 74px;
+    font-weight: 900;
+    text-transform: uppercase;
+    margin-top: 120px;
+
+    text-shadow: 0px 12px 7px rgba(0, 0, 0, 0.15);
+
+
+    span{
+      color: rgba(255, 255, 255, 0.45);
+    }
+}
+
+.intro__subtitle{
+    font-size: 54px;
+    font-weight: 900;
+    text-transform: uppercase;
+    position: relative;
+    margin-bottom: 110px;
+
+
+    &:after{
+        content: "";
+        display: block;
+        width: 170px;
+        height: 5px;
+        background-color: @white;
+
+        margin-top: 50px;
+
+        position: absolute;
+        top: auto;
+        left: 0;
+        z-index: 1;
+    }
+}
+
+.intro__text{
+    font-size: 24px;
+    font-weight: 300;
+    width: 35%;
+
+    margin-bottom: 85px;
+    p{
+        margin: 0;
+        padding: 0;
+    }
+}
+
+.intro__buttons{
+    position: relative;
+}
+.intro__img{
+    position: absolute;
+    top: 335px;
+    left: 800px;
+}

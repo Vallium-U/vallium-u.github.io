@@ -1,0 +1,42 @@
+// compress: true
+
+html {
+    font-size: 15px;
+
+    background-color: @white;
+
+}
+
+body {
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;
+    color: @white;
+    font-size: 1rem;
+
+    &.no-scroll {
+        overflow: hidden;
+    }
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: border-box;
+}
+
+
+
+/*Blocks*/
+@import url("blocks/header.less");
+@import url("blocks/btn.less");
+@import url("blocks/intro.less");
+@import url("blocks/features.less");
+@import url("blocks/catalog.less");
+@import url("blocks/advantages.less");
+@import url("blocks/reviews.less");
+
+
+
+/*Helpers*/
+@import "vars";
+@import "helper";

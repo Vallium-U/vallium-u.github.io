@@ -1,0 +1,116 @@
+// main: ../style.less
+
+.reviews {
+    background: #f7fdfe;
+}
+
+.reviews__inner{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 1200px;
+    height: auto;
+    margin: 0 auto;
+    position: relative;
+}
+
+.reviews__title {
+    padding-top: 120px;
+    padding-bottom: 125px;
+    font-size: 32px;
+    font-weight: 300;
+    color: @black;
+    width: 100%;
+    text-align: center;
+}
+
+.reviews__item {
+    margin: 0 auto;
+    margin-bottom: 180px;
+    width: 315px;
+    height: auto;
+    background: @white;
+    box-shadow: 0 0 20px 1px rgba(51, 51, 51, 0.25);
+    position: relative;
+}
+
+.reviews__item-img {
+    //    margin: 0 auto;
+
+    &--img {
+        position: absolute;
+        left: 35%;
+        top: -12%;
+    }
+}
+
+.reviews__item-name {
+    margin: 0 auto;
+    padding-top: 80px;
+    padding-bottom: 20px;
+    text-align: center;
+    font-size: 14px;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #666;
+}
+
+.reviews__item-position {
+    font-size: 12px;
+    font-weight: 300;
+    color: #999;
+    margin: 0;
+    padding-bottom: 45px;
+    text-align: center;
+}
+
+.reviews__item-text{
+    font-size: 12px;
+    font-weight: 700;
+    line-height: 2;
+    color: #666;
+    padding: 0 15px;
+    padding-bottom: 45px;
+    text-align: center;
+}
+
+.reviews__btn{
+    font-size: 0;
+    color: @white;
+    background: @white;
+    box-shadow: 0 0 20px 1px rgba(51, 51, 51, 0.25);
+
+    position: absolute;
+    top: 50%;
+    z-index: 1;
+    transform: translateY(-50%);
+
+    &--prev{
+        top: 57%;
+        left: -10%;
+        padding: 20px 20px 20px 20px;
+        transform: rotate(-90deg);
+    }
+    &--next{
+        top: 57%;
+        right: -10%;
+        padding: 20px 20px 20px 20px;
+        transform: rotate(90deg);
+    }
+}
+.reviews__btn:after{
+    content: "";
+    display: block;
+    width: 20px;
+    height: 20px;
+    background: @white;
+
+    border-top: 5px solid @deepblue;
+    border-left: 5px solid @deepblue;
+
+    position: relative;
+    transform: rotate(45deg)
+        scale(0.75);
+
+
+}
