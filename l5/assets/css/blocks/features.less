@@ -1,13 +1,13 @@
 // main: ../style.less
 
-.features{
+.features {
     display: flex;
     justify-content: center;
     align-items: center;
     padding-bottom: 48px;
 }
 
-.features__items{
+.features__items {
     position: relative;
     display: flex;
     justify-content: space-around;
@@ -15,55 +15,35 @@
     flex-wrap: wrap;
 }
 
-.features__card{
+.features__card {
     width: 320px;
+    min-height: 530px;
+    position: relative;
     margin: 20px;
     padding: 40px 30px;
     // background: @gray-dark;
     border-radius: 40px;
     box-shadow: -6px -6px 20px @features-light-gray, 6px 6px 20px @features-dark-gray;
-    
+
     transition: box-shadow 0.2s ease;
 
-    &:hover{
+    &:hover {
         // box-shadow: inset -6px -6px 20px rgba(47, 47, 47, 1), 
         // inset 6px 6px 20px rgba(25, 25, 25, 1);
         box-shadow: 3px 3px 5px 0 @features-light-gray, -3px -3px 5px @features-dark-gray,
-        inset 4px 4px 6px 0 @features-dark-gray, inset -2px -3px 5px @features-light-gray;
+            inset 4px 4px 6px 0 @features-dark-gray, inset -2px -3px 5px @features-light-gray;
     }
-}
 
-.features__img{
-    position: relative;
-    text-align: center;
-
-
-    img{
-        max-width: 120px;
-    }
-}
-
-.features__text{
-    position: relative;
-    margin-top: 20px;
-    text-align: center;
-    
-    h2{
-        color: @gray-light;
-        font-weight: 700;
-        font-size: 1.4em;
-        letter-spacing: 2px;
-    }
-    p{
-        color: @gray-light;
-    }
-    a{
-        display: inline-block;
+    a {
+        display: block;
+        position: absolute;
+        bottom: 15%;
+        left: 30%;
         padding: 10px 20px;
-        margin-top: 15px;
+        text-align: center;
         border-radius: 40px;
         color: @pink;
-        background: @gray-dark;//!
+        background: @gray-dark; //!
         font-size: 16px;
         font-weight: 700;
         text-decoration: none;
@@ -71,25 +51,52 @@
 
         transition: box-shadow .2s linear;
 
-        &:hover{
+        &:hover {
             // box-shadow: inset -4px -4px 10px #2f2f2f, inset 4px 4px 10px #191919;
             box-shadow: 3px 3px 5px 0 @features-light-gray, -3px -3px 5px @features-dark-gray,
-            inset 4px 4px 6px 0 @features-dark-gray, inset -2px -3px 5px @features-light-gray;
+                inset 4px 4px 6px 0 @features-dark-gray, inset -2px -3px 5px @features-light-gray;
         }
 
-        &:hover span{
+        &:hover span {
             display: block;
             transform: scale(0.98);
         }
     }
 }
 
-    .features__card{
+.features__img {
+    position: relative;
+    text-align: center;
 
-     &:hover{
+
+    img {
+        max-width: 120px;
+    }
+}
+
+.features__text {
+    position: relative;
+    margin-top: 20px;
+    text-align: center;
+
+    h2 {
+        color: @gray-light;
+        font-weight: 700;
+        font-size: 1.4em;
+        letter-spacing: 2px;
+    }
+
+    p {
+        color: @gray-light;
+    }
+
+}
+
+.features__card {
+
+    &:hover {
         transform: scale(0.98);
     }
-    
-        
+
+
 }
-    
