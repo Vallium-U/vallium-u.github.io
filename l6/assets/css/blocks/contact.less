@@ -76,9 +76,59 @@
 }
 
 .contact__social{
-    margin-left: 75%;
-    width: 25%;
+//    margin-left: 75%;
+//    width: 25%;
     display: flex;
+}
+
+.contact__reviews{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    width: 65%;
+    margin-left: auto;
+    overflow: hidden;
+    border-radius: 20px;
+    border: 1px solid @blue-eyes;
+}
+.contact__block{
+    display: flex;
+    width: 100%;
+    height: auto;
+    margin: 30px;
+    padding: 20px;
+    border-radius: 20px;
+    border: 1px solid @blue-eyes;
+}
+.contact__photo{
+    width: 150px;
+    height: 150px;
+    margin: auto;
+    margin-right: 65px;
+    border-radius: 50%;
+    &--photo{
+        border-radius: 50%;
+        border: 1px solid @blue-eyes;
+    }
+}
+
+.contact__name{
+    color: @gray-light;
+    font-size: 16px;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.contact__text-review{
+    margin: auto;
+    width: 75%;
+//    max-height: 50%;
+    height: auto;
+    padding: 5px 20px;
+    font-size: 16px;
+    font-weight: 300;
+    color: @gray-light;
+    line-height: 1.6;
 }
 
 .social__link{
