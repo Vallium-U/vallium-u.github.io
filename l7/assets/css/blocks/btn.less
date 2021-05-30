@@ -7,8 +7,8 @@
     min-width: 180px;
     text-align: center;
 
-    border: 1px solid @white;
-    border-radius: 30px;
+    border: 1px solid @gray;
+    border-radius: 5px;
     box-shadow: 0 0 15px transparent;
     background: none;
     cursor: pointer;
@@ -17,32 +17,33 @@
     font-size: 16px;
     line-height: 1.1;
     //background-color: @gray-dark;
-    color:  @white;
+    color:  @gray;
     text-transform: uppercase;
     text-decoration: none;
-//
-//    transition: background-color .3s linear,
-//    color .3s linear,
-//    box-shadow .3s linear;
-//
-//    &:focus{
-//        outline: none;
-//    }
-//
-//    &:hover{
-//        background-color: @gray-light;
-//        color: @gray-dark;
-//        box-shadow: 0 0 15px @white;
-//    }
+
+   transition: background-color .3s linear,
+   color .3s linear,
+   box-shadow .3s linear;
+
+   &:focus{
+       outline: none;
+   }
+
+   &:hover{
+       background-color: @blue;
+       color: @white;
+       //box-shadow: 0 0 15px @white;
+   }
 //
 //    + .btn{
 //        margin-left: 15px;
 //    }
 //
     &--header{
-        padding: 15px 40px;
-        min-width: 140px;
-        font-size: 10px;
+        padding: 20px 40px;
+        min-width: 80px;
+        font-size: 12px;
+        height: 45px;
         line-height: 0.1;
         text-align: center;
         vertical-align: top;
@@ -94,21 +95,20 @@
         text-transform: uppercase;
         text-decoration: none;
     }
-    &--product1{
+    &--auth1{
         margin: 0 auto;
-        border: 1px solid @deepblue;
+        border: 1px solid @blue;
         background: @white;
 
-        color:  @deepblue;
+        color:  @blue;
     }
-      &--product2{
+      &--auth2{
         margin: 0 auto;
           margin-bottom: 35px;
         border: 1px solid @white;
         background: @white;
         box-shadow: 0 0 50px #999;
-
-        color:  @deepblue;
+        color:  @blue;
     }
 
     &--next{

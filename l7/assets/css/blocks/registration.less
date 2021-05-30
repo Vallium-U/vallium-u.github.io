@@ -1,0 +1,74 @@
+// main: ../style.less
+
+.registration {
+    position: relative;
+    width: 100%;
+    height: 800px;
+    background: @white;
+    z-index: 10;
+}
+.registration__title{
+    text-align: center;
+    font-size: 17px;
+    background-color: @soft-green;
+    padding: 20px;
+    font-weight: 700;
+    color: @black;
+}
+.registration__inner {
+    align-items: center;
+    color: @black;
+
+    li {
+        list-style-type: none;
+    }
+    ul {
+        padding: 0;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        :last-child{
+            padding-top: 20px;
+        }
+    }
+}
+
+.form__label {
+    display: inline-block;
+    margin-top: 18px;
+    font-size: 14px;
+    font-weight: 700;
+    color: @black;
+}
+
+.form__input,
+.form__textarea {
+    display: block;
+    width: 500px;
+    padding: 16px 21px;
+
+    border: 1px solid @gray;
+    border-radius: 5px;
+
+    font-family: inherit;
+    font-size: 12px;
+    line-height: 1.2;
+    font-weight: 300;
+    color: @black;
+
+    transition: border-color 0.2s linear;
+
+    &:focus {
+        outline: none;
+
+        border-color: @blue;
+    }
+    &::placeholder {
+        color: @black;
+    }
+}
+
+.form__textarea {
+    height: 200px;
+    resize: none;
+}

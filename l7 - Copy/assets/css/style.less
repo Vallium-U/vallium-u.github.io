@@ -1,0 +1,41 @@
+// compress: true
+
+html {
+    font-size: 15px;
+
+    background-color: @white;
+
+}
+
+body {
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;
+    color: @white;
+    font-size: 1rem;
+
+    &.no-scroll {
+        overflow: hidden;
+    }
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: border-box;
+}
+
+
+
+/*Blocks*/
+@import url("blocks/header.less");
+@import url("blocks/btn.less");
+@import url("blocks/intro.less");
+@import url("blocks/photos.less");
+@import url("blocks/auth.less");
+
+
+
+
+/*Helpers*/
+@import "vars";
+@import "helper";
