@@ -28,24 +28,35 @@
     left: -10px;
     font-size: 92px;
     font-weight: 700;
-    color: rgba(@gray-light,1);
-    text-shadow: 0 0 60px rgba(255,255,255,.4);//@white 0.4
+    color: rgba(@gray,1);
+    filter: drop-shadow(0 0 15px @black) saturate(1) blur(0px);
     text-transform: uppercase;
-// /* Clip Background Image */
-// 	  background: url(http://f.cl.ly/items/010q3E1u3p2Q0j1L1S1o/animated_text_fill.png) repeat-y;
-// 	  -webkit-background-clip: text;
-// 	  background-clip: text;
-//     /* Animate Background Image */
-// 	  -webkit-text-fill-color: transparent;
-// 	  animation: textfillanim 80s linear infinite;
-//     /* Activate hardware acceleration for smoother animations */
-// 	  transform: translate3d(0,0,0);
-// 	  backface-visibility: hidden;
-}
-/* Animate Background Image */
-@keyframes textfillanim {
-	0% { background-position: 0% 50%; }
-	100% { background-position: 100% 50%; }
+
+    &:before {  
+        transform: scaleX(0);
+        transform-origin: bottom left;
+      }
+      
+      &:hover::before {
+        transform: scaleX(1);
+        transform-origin: bottom left;
+        filter: drop-shadow(0 0 60px @orange) saturate(1) blur(2px);
+      }
+      
+      &:before {
+        content: " ";
+        display: block;
+        position: absolute;
+        top: 0; right: 0; bottom: 0; left: 0;
+        inset: 0 0 0 0;
+        background: @orange;
+        border: solid 1px @orange;
+        border-radius: 10px;
+        z-index: -1;
+        filter: drop-shadow(0 0 0 @orange) saturate(1) blur(2px);
+        transition: transform .3s ease, filter .3s ease;
+        
+      }
 }
 
 .about__text{
@@ -60,12 +71,15 @@
 .about__photo{
     align-self: center;
     width: 40%;
-    border-radius: 999px;
-    filter: drop-shadow(0 0 0 @white) saturate(0) blur(0.5em);
+    border-radius: 5px;
+    filter: drop-shadow(0 0 0 @black) saturate(0) blur(0.5em);
     transition: all 1.5s linear 50ms;
-
+    img{
+        border-radius: 5px;
+    }
     &:hover {
-        filter: drop-shadow(0 0 150px @orange) saturate(1) blur(0em);
+        filter: drop-shadow(0 0 150px @black) saturate(0) blur(0em);
         transition: all .2s linear 50ms;
-      }
+        
+    }
 }
