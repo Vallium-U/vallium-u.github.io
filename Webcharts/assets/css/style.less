@@ -1,0 +1,64 @@
+// compress: true
+
+html {
+    font-size: 15px;
+
+    background: @gray-dark;
+
+}
+
+body {
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;
+    color: @blue;
+    font-size: 1rem;
+    transition: 200ms linear;
+
+    &.no-scroll {
+        overflow: hidden;
+    }
+    &.light-theme{
+	background: lighten(rgb(200,200,200), 15%);
+    transition: 200ms linear;
+    color: @gray-dark;
+    }
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: border-box;
+}
+
+
+
+/*Blocks*/
+@import "blocks/container.less";
+@import "blocks/header.less";
+@import "blocks/header_content.less";
+@import url("blocks/chart.less");
+@import url("blocks/switch.less");
+@import url("blocks/registration.less");
+@import url("blocks/btn.less");
+@import url(blocks/footer.less);
+//@import "blocks/social.less";
+//@import "blocks/btn.less";
+//@import "blocks/about.less";
+//@import "blocks/features.less";
+//@import "blocks/reviews.less";
+//@import "blocks/works.less";
+//@import "blocks/portfolio.less";
+//@import "blocks/contact.less";
+//@import "blocks/footer.less";
+//@import "blocks/modal.less";
+//@import "blocks/modal__contact.less";
+//@import "blocks/form.less";
+//@import "blocks/timeline.less";
+//@import "blocks/progress-bar.less";
+
+
+
+
+/*Helpers*/
+@import "vars";
+@import "helper";

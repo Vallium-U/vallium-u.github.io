@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="" />
+    <meta name="keywords" content="" />
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Kaushan+Script|Montserrat:400,700&amp;subset=cyrillic-ext" rel="stylesheet">
+
+    <link rel="stylesheet" type="text/css" href="assets/slick/slick.css" />
+    <link rel="stylesheet" type="text/css" href="assets/slick/slick-theme.css" />
+
+    <script src="https://kit.fontawesome.com/50e5171fca.js" crossorigin="anonymous"></script>
+    <title>Web-charts registration</title>
+</head>
+
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="header__inner">
+                <div class="header_content">
+                    <h1 class="header_content__name">Web-charts by AA & LM</h1>
+                    <div class="switch_theme">
+                        <p>Change theme</p>
+                        <label class="switch">
+                            <input type="checkbox" onchange="changeTheme(event)">
+                            <span class="slider"></span>
+                        </label>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </header>
+
+    <div class="registration">
+        <div class="container">
+            <h1 class="registration__title">Sign Up</h1>
+            <form class="registration__inner">
+                <ul>
+                    <li>
+                        <label class="form__label" for="Firstname">Username:</label>
+                        <input class="form__input" type="text" id="name" name="user_name">
+                    </li>
+                    <li>
+                        <label class="form__label" for="mail">Email:</label>
+                        <input class="form__input" type="email" id="mail" name="user_mail">
+                    </li>
+                    <li>
+                        <label class="form__label" for="mail">Password:</label>
+                        <input class="form__input" type="email" id="mail" name="user_password">
+                    </li>
+                    <li>
+                        <label class="form__label" for="mail">Confirm password:</label>
+                        <input class="form__input" type="email" id="mail" name="user_confirm_password">
+                    </li>
+                    <div class="registration-btn">
+                        <button class="btn btn--reg" type="button ">Registration</button>
+                    </div>
+                </ul>
+
+            </form>
+        </div>
+    </div>
+
+    <!-- scroll-->
+    <script src="assets/js/app.js"></script>
+
+</body>
+
+</html>
